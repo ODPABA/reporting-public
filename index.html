@@ -9,34 +9,21 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* dôležité – skryje pretečenie */
     }
-
-    .iframe-container {
+    iframe {
+      width: 100vw;
       height: 100vh;
-      width: 100vw;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .iframe-container iframe {
-      height: 110vh; /* o niečo vyššie ako obrazovka */
-      width: 100vw;
       border: none;
-      position: absolute;
-      top: -5vh; /* posunúť hore o 5 % výšky */
-      left: 0;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <div class="iframe-container">
-    <iframe 
-      src="https://app.powerbi.com/view?r=eyJrIjoiOTMwYzE3MTItODVjMC00ODEzLTk3YTEtNjI4ZDRkNDA1MGM4IiwidCI6ImZlNjllNzRlLTFlNjYtNGZjYi05OWM1LTU4ZTRhMmQyYTA2MyIsImMiOjl9&fitToPage=false&navContentPaneEnabled=false&filterPaneEnabled=false" 
-      allowfullscreen>
-    </iframe>
-  </div>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiOTMwYzE3MTItODVjMC00ODEzLTk3YTEtNjI4ZDRkNDA1MGM4IiwidCI6ImZlNjllNzRlLTFlNjYtNGZjYi05OWM1LTU4ZTRhMmQyYTA2MyIsImMiOjl9&fitToPage=false&navContentPaneEnabled=false&filterPaneEnabled=false" 
+    allowfullscreen>
+  </iframe>
 
 </body>
 </html>
